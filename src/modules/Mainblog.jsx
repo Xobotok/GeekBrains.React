@@ -1,8 +1,6 @@
-/**
- * Created by Xobat on 15.06.2018.
- */
 import React, { Component } from 'react';
 import img from '../images/mainblog.png';
+
 export default class Mainblog extends Component {
 render(){
     const {items} = this.props;

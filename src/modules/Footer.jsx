@@ -1,6 +1,3 @@
-/**
- * Created by Xobat on 15.06.2018.
- */
 import React, {Component} from 'react';
 
 export default class Footer extends Component{

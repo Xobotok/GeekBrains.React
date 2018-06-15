@@ -1,6 +1,3 @@
-/**
- * Created by Xobat on 15.06.2018.
- */
 const mainblog_items = {
     image: "./images/mainblog.png",
     title: "Lorem Ipsum is simply cssauthor.com",

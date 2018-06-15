@@ -3,12 +3,6 @@ import './Header_consts';
 import React, { Component } from 'react';
 
 export default class Header extends Component {
-  loginClick() {
-      $(document).ready(function() {
-          $("#myModalBox").modal('show');
-      });
-  }
-
   render () {
       const { items } = this.props;
     return (

@@ -1,6 +1,3 @@
-/**
- * Created by Xobat on 15.06.2018.
- */
 import './Review_consts';
 import React, { Component } from 'react';
 import img from '../images/ipad.png';

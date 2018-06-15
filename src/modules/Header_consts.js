@@ -1,7 +1,3 @@
-/**
- * Created by Xobat on 13.06.2018.
- */
-
 const navigation_list = [
     {
         link: "#", title: "Home"
@@ -16,5 +12,4 @@ const navigation_list = [
         link: "#", title: "Pages"
     }
 ];
-
 export {navigation_list};
