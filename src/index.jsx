@@ -55,4 +55,3 @@ ReactDom.render(<SectionReview />, document.getElementById('review'));
 ReactDom.render(<SectionMainblog />, document.getElementById('mainblog'));
 ReactDom.render(<SectionBlogs />, document.getElementById('blogs'));
 ReactDom.render(<SectionFooter />, document.getElementById('footer'));
-ReactDom.render(<SectionModal />, document.getElementById('modal'));

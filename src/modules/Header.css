@@ -13,9 +13,17 @@ a {
 }
 div {
   text-align: center;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-top: 10px;
 }
 span {
   color: green;
+}
+.modal-header {
+  text-align: left;
+  display: inline-block;
+}
+.modal-footer {
+  display: flex;
+justify-content: space-between;
 }
