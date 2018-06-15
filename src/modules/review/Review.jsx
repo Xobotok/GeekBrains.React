@@ -1,11 +1,12 @@
 import './Review_consts';
 import React, { Component } from 'react';
-import img from '../images/ipad.png';
+import img from '../../images/ipad.png';
 
 export default class Review extends Component {
     render () {
         const  {items} = this.props;
         return (
+            <section>
             <div className="row">
                 <div className="review__leftside col-lg-4">
                     <h2 className="review__leftside_title">{items.title} <span>{items.span}</span></h2>
@@ -14,6 +15,7 @@ export default class Review extends Component {
                     <img src= {img} alt="Ipad" className="review__rightside_image"/>
                 </div>
             </div>
+            </section>
         );
     };
 };

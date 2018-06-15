@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import img from '../images/mainblog.png';
+import img from '../../images/mainblog.png';
 
 export default class Mainblog extends Component {
 render(){
     const {items} = this.props;
     return (
+        <section>
         <div className="row">
             <div className="mainblog__leftside col-lg-4">
                 <img src = {img} alt="Main" className= "mainblog__leftside_image"/>
@@ -16,6 +17,7 @@ render(){
                 <button className="mainblog_rightside_button">next</button>
             </div>
         </div>
+        </section>
     );
 };
 };

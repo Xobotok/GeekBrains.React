@@ -4,8 +4,9 @@ import React, { Component } from 'react';
 
 export default class Header extends Component {
   render () {
-      const { items } = this.props;
+      const { header_items } = this.props;
     return (
+        <section>
         <div className="row">
           <div className="header__logo col-lg-3">
             <h3 className="header__logo_title">Metr<span>o</span>Blog</h3>
@@ -15,7 +16,7 @@ export default class Header extends Component {
           </div>
           <div className="header__navigation col-lg-6">
             <ul>
-                {items.map(item => <li><a href = {item.link}>{item.title}</a></li>)}
+                {header_items.map(item => <li><a href = {item.link}>{item.title}</a></li>)}
             </ul>
           </div>
             <div id="myModalBox" className="modal fade">
@@ -36,6 +37,7 @@ export default class Header extends Component {
                 </div>
             </div>
         </div>
+        </section>
     );
   };
 };
