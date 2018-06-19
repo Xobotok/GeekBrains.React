@@ -16,7 +16,6 @@ import './style.css';
 class App extends Component {
     constructor(){
         super();
-        //alert("С подключением %username")
     }
     render() {
         return(
@@ -30,5 +29,4 @@ class App extends Component {
         )
     }
 }
-
 ReactDom.render(<App />, document.body);

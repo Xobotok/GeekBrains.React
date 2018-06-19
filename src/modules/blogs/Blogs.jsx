@@ -9,8 +9,6 @@ export default class Blogs extends Component {
             localStorage.setItem('blogs', JSON.stringify(props));
         }
         this.items = JSON.parse(localStorage.getItem('blogs'));
-        console.log(props);
-        console.log(this.items);
     }
     render() {
        const {items} = this.items;
