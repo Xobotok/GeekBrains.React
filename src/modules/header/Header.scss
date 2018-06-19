@@ -9,6 +9,13 @@ li {
 }
 a {
   color: black;
+  padding: 10px;
+  &:hover {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
 }
 div {
   text-align: center;

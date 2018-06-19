@@ -14,6 +14,9 @@ import Footer from './modules/Footer';
 
 import './style.css';
 class App extends Component {
+    constructor(){
+        super();
+    }
     render() {
         return(
          <Fragment>
@@ -26,5 +29,4 @@ class App extends Component {
         )
     }
 }
-
 ReactDom.render(<App />, document.body);
