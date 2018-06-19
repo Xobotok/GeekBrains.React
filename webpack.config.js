@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -47,7 +48,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html'
-    })
+    }),
+      new CopyWebpackPlugin ([
+          {from: 'src/images', to: 'images'}
+      ])
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

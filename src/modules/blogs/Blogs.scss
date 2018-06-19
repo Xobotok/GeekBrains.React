@@ -1,0 +1,12 @@
+.blogs {
+  &__blog {
+    &_title {
+      font-size: 22px;
+      color: green;
+    }
+    &_date {
+      color: #1859ff;
+      font-weight: bold;
+    }
+  }
+}

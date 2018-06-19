@@ -14,6 +14,10 @@ import Footer from './modules/Footer';
 
 import './style.css';
 class App extends Component {
+    constructor(){
+        super();
+        //alert("С подключением %username")
+    }
     render() {
         return(
          <Fragment>

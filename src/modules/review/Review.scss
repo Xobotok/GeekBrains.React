@@ -1,0 +1,13 @@
+.review__leftside {
+  text-align: left;
+  &_title {
+    span {
+      display: block;
+      padding-top: 15px;
+    }
+  }
+}
+.review__rightside_image {
+  max-width: 817px;
+  max-height: 384px;
+}

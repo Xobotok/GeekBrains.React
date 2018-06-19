@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import './Header_consts';
 import React, { Component } from 'react';
 
