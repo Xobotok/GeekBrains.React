@@ -1,6 +1,8 @@
 import './Header.scss';
-import './Header_consts';
+
 import React, { Component } from 'react';
+
+import './Header_consts';
 
 export default class Header extends Component {
   render () {
