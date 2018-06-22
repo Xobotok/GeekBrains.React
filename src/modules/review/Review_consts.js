@@ -11,4 +11,3 @@ const review_items = [
 ];
 
 export {review_items};
-

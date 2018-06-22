@@ -2,6 +2,7 @@ import './style.css';
 
 import React, { Component, Fragment } from 'react';
 import ReactDom from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 import Header from './containers/HeaderContainer';
 import Review from './containers/ReviewContainer';
@@ -15,13 +16,13 @@ class App extends Component {
     }
     render() {
         return(
-         <Fragment>
+         <BrowserRouter>
              <Header />
              <Review />
              <Mainblog />
              <Blogs />
              <Footer />
-         </Fragment>
+         </BrowserRouter>
         )
     }
 }
