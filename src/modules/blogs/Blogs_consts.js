@@ -4,154 +4,126 @@ const blogs_items = [
     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, rem!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Eric Lau"
+        author: "Eric Lau",
     },
     {
         id: 2,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, quas?",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Ben Simmons"
+        author: "Ben Simmons",
     },
     {
         id: 3,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repudiandae?",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "Demarcus Cousins",
     },
     {
         id: 4,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, provident!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "Demar Derozan",
     },
     {
         id: 5,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, possimus!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-       author: "Kevin Clarcson"
+       author: "Kyle Kuzma",
     },
     {
         id: 6,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fuga!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "Eric Gordon",
     },
     {
         id: 7,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptas!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "P.J. Tucker",
     },
     {
         id: 8,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, rem!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "Clint Capella",
     },
     {
         id: 9,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae?",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "Bred Stivenson",
     },
     {
         id: 10,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ratione.",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        author: "Kevin Clarcson"
+        author: "Mike D. Antony",
     },
     {
+        id: 11,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quisquam?",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Lonzo Ball",
     },
     {
+        id: 12,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quam!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Trevor Ariza",
     },
     {
+        id: 13,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, rem!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Derik Rose",
     },
     {
+        id: 14,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, quas?",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "James Harden",
     },
     {
+        id: 15,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repudiandae?",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Lebron James",
     },
     {
+        id: 16,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, provident!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Patric Beverly",
     },
     {
+        id: 17,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, possimus!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Kawhi Leonard",
     },
     {
+        id: 18,
         title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fuga!",
         date: "15.06.2018",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
+        author: "Kevin Durant",
     },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptas!",
-        date: "15.06.2018",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
-    },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, rem!",
-        date: "15.06.2018",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
-    },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae?",
-        date: "15.06.2018",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
-    },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ratione.",
-        date: "15.06.2018",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
-    },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quisquam?",
-        date: "15.06.2018",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
-    },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quam!",
-        date: "15.06.2018",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi culpa facere illum ipsa magnam quidem repellendus sapiente tempore temporibus tenetur, vel, voluptate. Accusamus ad cumque deserunt dolor earum est ex excepturi explicabo in inventore laboriosam laborum libero maiores necessitatibus optio perferendis possimus quisquam, reiciendis sequi, tempore unde veniam.",
-        like: false
-    }
 ];
 export {blogs_items};

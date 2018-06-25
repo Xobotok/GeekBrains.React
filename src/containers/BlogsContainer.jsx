@@ -14,7 +14,7 @@ constructor(props) {
     }
 }
 load() {
-    const { items, blogs , page} = this.state;
+    const { items, blogs, page} = this.state;
     let newArray = [];
     for(let i = blogs.length; i < items * page && i < blogs_items.length; i++) {
         newArray.push(blogs_items[i]);
