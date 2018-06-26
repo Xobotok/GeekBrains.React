@@ -2,7 +2,7 @@ import './style.css';
 
 import React, {Component, Fragment} from 'react';
 import ReactDom from 'react-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
 
 import routes from './routes'
 
@@ -13,7 +13,7 @@ class App extends Component {
     }
 
     render() {
-        console.log(routes);
+
         return (
             <BrowserRouter>
                 <Switch>

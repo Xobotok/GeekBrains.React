@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 
 import Footer from '../modules/footer/Footer';
 import {footer_items} from '../modules/footer/Footer_consts';
