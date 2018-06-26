@@ -6,12 +6,9 @@ import DataBase from '../engine/DataBase';
 export default class UserContainer extends PureComponent{
     constructor(props) {
         super(props);
-        console.log(props);
     }
     render(){
-      
         return(
-
             <User/>
         )
     }
