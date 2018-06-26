@@ -9,8 +9,7 @@ export default class UserContainer extends PureComponent{
         console.log(props);
     }
     render(){
-        const id = this.props;
-
+      
         return(
 
             <User/>
