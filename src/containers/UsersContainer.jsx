@@ -1,37 +1,40 @@
 import React, {PureComponent, Fragment} from 'react';
+import {connect} from 'react-redux'
 
 import Users from '../modules/users/Users';
-import DataBase from '../engine/DataBase';
+import {loadUsers} from '../actions/users';
 
-export default class UsersContainer extends PureComponent {
-    constructor(props) {
-        super(props);
+class UsersContainer extends PureComponent {
 
-        this.state = {
-            users: []
-        };
-    }
-
-    load() {
-        const { users } = this.state;
-        DataBase.getData(`https://jsonplaceholder.typicode.com/users`,(props)=>{
-            this.setState({
-                users: users.concat(props),
-            }, () => {
-
-            })
-        })
-    }
     componentDidMount() {
-        this.load();
+        const {load} = this.props;
+        load();
     }
 
     render() {
-        const { users, loading } = this.state;
+        console.log(this.props);
+        const { users, loading } = this.props;
         return (
             <Fragment>
                 {loading ? <div>Loading...</div> : <Users users={users} />}
             </Fragment>
         );
     }
-};
+}
+
+function mapStateToProps(state, props){
+   return {
+       ...props,
+       loading: state.users.loading,
+       users: state.users.users,
+   }
+
+}
+function mapDispatchToProps(dispatch, props){
+    return{
+        ...props,
+        load: () => loadUsers(dispatch),
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(UsersContainer);

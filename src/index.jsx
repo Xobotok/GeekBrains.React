@@ -3,9 +3,10 @@ import './style.css';
 import React, {Component, Fragment} from 'react';
 import ReactDom from 'react-dom';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-
+import {Provider} from 'react-redux';
 
 import routes from './routes';
+import store from './store';
 
 
 
@@ -13,6 +14,7 @@ class App extends Component {
     render() {
 
         return (
+            <Provider store={store}>
             <BrowserRouter>
                 <Fragment>
                 <Switch>
@@ -20,6 +22,7 @@ class App extends Component {
                 </Switch>
                 </Fragment>
             </BrowserRouter>
+            </Provider>
         )
     }
 }

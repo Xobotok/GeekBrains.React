@@ -12,9 +12,8 @@ export default class Blogs extends Component {
             <section>
             <div className="row">
                 {blogs.map((item, index) => <div key = {index} className="col-lg-6 blogs__blog">
-                    <Link to = {"blogs/"+item.id} className="blogs__blog_title">{item.title}</Link>
-                    <p className="blogs__blog_date">{item.date}</p>
-                    <p className="blogs__blog_text">{item.text}</p>
+                    <Link to = {href} className="blogs__blog_title">{item.title}</Link>
+                    <p className="blogs__blog_text">{item.body}</p>
                 </div>)}
                 <button onClick={onLoadMore}>Ещё блоги</button>
             </div>

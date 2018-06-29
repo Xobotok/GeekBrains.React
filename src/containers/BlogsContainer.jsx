@@ -1,43 +1,40 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, {PureComponent, Fragment} from 'react';
+import {connect} from 'react-redux'
 
 import Blogs from '../modules/blogs/Blogs';
-import {blogs_items} from '../modules/blogs/Blogs_consts';
+import {loadBlogs} from '../actions/blogs';
 
-export default class BlogsContainer extends PureComponent {
-constructor(props) {
-    super(props);
-    this.state = {
-        loading: false,
-        items: 6,
-        page: 1,
-        blogs: []
+class BlogsContainer extends PureComponent {
+
+    componentDidMount() {
+        const {load} = this.props;
+        load();
+    }
+
+    render() {
+        console.log(this.props);
+        const { blogs, loading } = this.props;
+        return (
+            <Fragment>
+                {loading ? <div>Loading...</div> : <Blogs blogs={blogs} />}
+            </Fragment>
+        );
     }
 }
-load() {
-    const { items, blogs, page} = this.state;
-    let newArray = [];
-    for(let i = blogs.length; i < items * page && i < blogs_items.length; i++) {
-        newArray.push(blogs_items[i]);
+
+function mapStateToProps(state, props){
+    return {
+        ...props,
+        loading: state.blogs.loading,
+        users: state.blogs.users,
     }
-    this.setState({
-        loading: true,
-        blogs: blogs.concat(newArray),
-        page: page + 1
-    });
 
 }
-componentDidMount(){
-    this.load();
+function mapDispatchToProps(dispatch, props){
+    return{
+        ...props,
+        load: () => loadBlogs(dispatch),
+    }
 }
-handleLoadMore = () => {
-    this.load();
-};
-render() {
-    const { blogs } = this.state;
-    return (
-        <Fragment>
-            <Blogs onLoadMore = {this.handleLoadMore} blogs = {blogs}/>
-        </Fragment>
-    );
-}
-}
+
+export default connect(mapStateToProps,mapDispatchToProps)(BlogsContainer);
