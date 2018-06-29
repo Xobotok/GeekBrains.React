@@ -27,7 +27,6 @@ export default  [
     },
     {
         path:'/users/:id',
-        historyApiFallback: true,
         exact: true,
         component: UserPage,
     }

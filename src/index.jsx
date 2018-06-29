@@ -2,23 +2,23 @@ import './style.css';
 
 import React, {Component, Fragment} from 'react';
 import ReactDom from 'react-dom';
-import {BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import routes from './routes'
+
+import routes from './routes';
+
 
 
 class App extends Component {
-    constructor() {
-        super();
-    }
-
     render() {
 
         return (
             <BrowserRouter>
+                <Fragment>
                 <Switch>
                     {routes.map((route, index) => <Route key = {index} {...route} />)}
                 </Switch>
+                </Fragment>
             </BrowserRouter>
         )
     }

@@ -1,9 +1,13 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 
 export default class User extends PureComponent {
-    render(){
-        return(
-            <div>Не успел, каюсь! :((</div>
+    render() {
+        const { user } = this.props;
+        return (
+            <div>
+                {user.name} ({user.username})
+                <a href={`mailto:${user.email}`}>Email me</a>
+            </div>
         )
     }
 }
