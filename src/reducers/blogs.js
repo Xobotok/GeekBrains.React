@@ -22,7 +22,8 @@ export default handleActions({
     [loadCompleted]: (state, action) => {
         return {
             ...state,
-            users: action.payload,
+            page: state.page + 1,
+            blogs: state.blogs.concat(action.payload),
             loading: false,
         };
     },

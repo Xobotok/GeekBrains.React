@@ -12,7 +12,6 @@ class UsersContainer extends PureComponent {
     }
 
     render() {
-        console.log(this.props);
         const { users, loading } = this.props;
         return (
             <Fragment>

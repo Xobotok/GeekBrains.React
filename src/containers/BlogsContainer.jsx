@@ -5,18 +5,22 @@ import Blogs from '../modules/blogs/Blogs';
 import {loadBlogs} from '../actions/blogs';
 
 class BlogsContainer extends PureComponent {
-
-    componentDidMount() {
-        const {load} = this.props;
+    handleLoadMore = () => {
+        const { load } = this.props;
         load();
+    };
+    componentDidMount() {
+        const {load, blogs} = this.props;
+        if(!blogs.length) {
+            load();
+        }
     }
 
     render() {
-        console.log(this.props);
         const { blogs, loading } = this.props;
         return (
             <Fragment>
-                {loading ? <div>Loading...</div> : <Blogs blogs={blogs} />}
+                {loading && !blogs.length ? <div>Loading...</div> : <Blogs onLoadMore={this.handleLoadMore} blogs={blogs} />}
             </Fragment>
         );
     }
@@ -25,16 +29,23 @@ class BlogsContainer extends PureComponent {
 function mapStateToProps(state, props){
     return {
         ...props,
+        page: state.blogs.page,
         loading: state.blogs.loading,
-        users: state.blogs.users,
+        blogs: state.blogs.blogs,
+    };
+}
+function mergeMap(stateProps, dispatchProps, ownProps) {
+    return {
+        ...stateProps,
+        ...ownProps,
+        load: () => dispatchProps.load(stateProps.page),
     }
-
 }
 function mapDispatchToProps(dispatch, props){
     return{
         ...props,
-        load: () => loadBlogs(dispatch),
+        load: loadBlogs.bind(null, dispatch),
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(BlogsContainer);
+export default connect(mapStateToProps,mapDispatchToProps,mergeMap)(BlogsContainer);
