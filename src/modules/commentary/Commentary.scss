@@ -1,0 +1,15 @@
+.blog__block {
+  border: 1px solid gray;
+  margin: 20px;
+  padding: 40px 160px;
+  border-radius: 10px;
+  }
+.blogs__blog_line {
+  padding-bottom: 12px;
+  border-bottom: 1px solid gray;
+}
+.blog__commentary {
+  &_text {
+    font-size: 14px;
+  }
+}

@@ -1,5 +1,4 @@
 import React, { PureComponent, Fragment } from 'react';
-
 import Header from '../modules/header/Header';
 import {navigation_list} from '../modules/header/Header_consts';
 

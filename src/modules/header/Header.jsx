@@ -1,12 +1,15 @@
 import './Header.scss';
 
 import React, { Component } from 'react';
+import {Link, withRouter} from 'react-router-dom';
+import classNames from 'classnames'
 
 import './Header_consts';
 
-export default class Header extends Component {
+class Header extends Component {
   render () {
       const { header_items } = this.props;
+      const { location } = this.props;
     return (
         <section>
         <div className="row">
@@ -18,7 +21,7 @@ export default class Header extends Component {
           </div>
           <div className="header__navigation col-lg-6">
             <ul>
-                {header_items.map(item => <li><a href = {item.link}>{item.title}</a></li>)}
+                {header_items.map(item => <li><Link  className={classNames({ active: location.pathname === item.link, navigation: location.pathname})} to = {item.link}>{item.title}</Link></li>)}
             </ul>
           </div>
             <div id="myModalBox" className="modal fade">
@@ -43,3 +46,4 @@ export default class Header extends Component {
     );
   };
 };
+export default withRouter(Header);

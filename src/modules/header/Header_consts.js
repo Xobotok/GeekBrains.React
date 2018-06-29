@@ -1,15 +1,15 @@
 const navigation_list = [
     {
-        link: "#", title: "Home"
+        link: "/", title: "Главная"
     },
     {
-        link: "#", title: "About"
+        link: "/blogs", title: "Блог"
     },
     {
-        link: "#", title: "Articles"
+        link: "/commentary", title: "Комментарии"
     },
     {
-        link: "#", title: "Pages"
+        link: "/users", title: "Пользователи"
     }
 ];
 export {navigation_list};

@@ -36,7 +36,7 @@ export default class ReviewContainer extends PureComponent {
                 slide: this.items.length - 1
             })
         }
-    }
+    };
     render() {
         const {slide} = this.state;
         return (
